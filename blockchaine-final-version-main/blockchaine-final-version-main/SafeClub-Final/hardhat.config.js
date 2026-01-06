@@ -1,0 +1,15 @@
+import "@nomicfoundation/hardhat-toolbox";
+
+/** @type import('hardhat/config').HardhatUserConfig */
+export default {
+  solidity: "0.8.28",
+  networks: {
+    localhost: {
+      url: "http://127.0.0.1:8545",
+    }
+  },
+  // Add sourcify inside the same block
+  sourcify: {
+    enabled: false
+  }
+};
