@@ -1,0 +1,15 @@
+npx hardhat run scripts/demo-dos-attack.js --network localhost
+
+   # Terminal 1 : Hardhat node
+   cd SafeClub-Final
+   npx hardhat node
+   
+   # Terminal 2 : Frontend
+   cd test-gui-main/test-gui-main
+   npm run dev
+
+
+
+   # Terminal 3
+   cd SafeClub-Final
+   npx hardhat run scripts/demo-vote-manipulation.js --network localhost
